@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"我的";
+    self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 200, 30)];
 //    btn.backgroundColor = [UIColor blueColor];
