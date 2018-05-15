@@ -1,0 +1,11 @@
+
+# Xcode
+xcuserdata
+DerivedData
+*.ipa
+*.xcuserstate
+project.xcworkspace
+*._*
+
+# VSCode
+.vscode
