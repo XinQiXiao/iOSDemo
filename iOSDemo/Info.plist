@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>应用需要在使用期间访问您的位置</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>始终允许应用访问位置</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>始终允许应用访问位置并且在使用期间访问位置</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

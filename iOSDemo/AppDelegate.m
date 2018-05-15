@@ -10,6 +10,7 @@
 #import "HomeViewController.h"
 #import "WorkViewController.h"
 #import "MineViewController.h"
+#import "MapDemoViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +25,7 @@
     [self.window makeKeyAndVisible];
 
     self.window.rootViewController = [self createTabBar];
+//    self.window.rootViewController = [MapDemoViewController new];
     return YES;
 }
 
