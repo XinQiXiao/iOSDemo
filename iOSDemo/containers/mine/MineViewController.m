@@ -7,7 +7,7 @@
 //
 
 #import "MineViewController.h"
-
+#import "MyLayoutDemoViewController.h"
 
 @interface MineViewController ()
 
@@ -19,6 +19,11 @@
     [super viewDidLoad];
     self.title = @"我的";
     
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 200, 30)];
+    [btn setTitle:@"MyLayout" forState:(UIControlStateNormal)];
+    [btn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+    [btn addTarget:self action:@selector(toMKMap) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:btn];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,6 +31,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+- (void)toMylayout{
+    [self.navigationController pushViewController:[MyLayoutDemoViewController new] animated:YES];
+}
 
 @end

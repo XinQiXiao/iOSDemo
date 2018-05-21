@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9913F4E520B2C94800F9A8B0 /* MyLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9913F4E420B2C94800F9A8B0 /* MyLayoutDemoViewController.m */; };
+		9913F4FC20B2DDBC00F9A8B0 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9913F4FB20B2DDBB00F9A8B0 /* MBProgressHUD.framework */; };
+		9913F4FE20B2DF0600F9A8B0 /* MyLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9913F4E020B2C60A00F9A8B0 /* MyLayout.framework */; };
 		991AB71020AA8251003C8A52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 991AB70F20AA8251003C8A52 /* AppDelegate.m */; };
 		991AB71220AA8257003C8A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 991AB71120AA8257003C8A52 /* Assets.xcassets */; };
 		991AB71520AA8257003C8A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991AB71320AA8257003C8A52 /* LaunchScreen.storyboard */; };
@@ -24,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9913F4E020B2C60A00F9A8B0 /* MyLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyLayout.framework; path = Carthage/Build/iOS/MyLayout.framework; sourceTree = "<group>"; };
+		9913F4E320B2C94800F9A8B0 /* MyLayoutDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLayoutDemoViewController.h; sourceTree = "<group>"; };
+		9913F4E420B2C94800F9A8B0 /* MyLayoutDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLayoutDemoViewController.m; sourceTree = "<group>"; };
+		9913F4FB20B2DDBB00F9A8B0 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = Carthage/Build/iOS/MBProgressHUD.framework; sourceTree = "<group>"; };
 		991AB70B20AA8251003C8A52 /* iOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		991AB70E20AA8251003C8A52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		991AB70F20AA8251003C8A52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,17 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9913F4FE20B2DF0600F9A8B0 /* MyLayout.framework in Frameworks */,
+				9913F4FC20B2DDBC00F9A8B0 /* MBProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9913F4DF20B2C60900F9A8B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9913F4FB20B2DDBB00F9A8B0 /* MBProgressHUD.framework */,
+				9913F4E020B2C60A00F9A8B0 /* MyLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		991AB70220AA8250003C8A52 = {
 			isa = PBXGroup;
 			children = (
+				99B669A820B3064200010683 /* thirdLibs */,
 				991AB70D20AA8251003C8A52 /* iOSDemo */,
 				991AB70C20AA8251003C8A52 /* Products */,
+				9913F4DF20B2C60900F9A8B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +152,8 @@
 				991AB72420AA84A9003C8A52 /* MineViewController.m */,
 				991AB73B20AA8DB8003C8A52 /* MapDemoViewController.h */,
 				991AB73C20AA8DB8003C8A52 /* MapDemoViewController.m */,
+				9913F4E320B2C94800F9A8B0 /* MyLayoutDemoViewController.h */,
+				9913F4E420B2C94800F9A8B0 /* MyLayoutDemoViewController.m */,
 			);
 			path = mine;
 			sourceTree = "<group>";
@@ -165,6 +187,13 @@
 			path = tabbar;
 			sourceTree = "<group>";
 		};
+		99B669A820B3064200010683 /* thirdLibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = thirdLibs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +204,7 @@
 				991AB70720AA8251003C8A52 /* Sources */,
 				991AB70820AA8251003C8A52 /* Frameworks */,
 				991AB70920AA8251003C8A52 /* Resources */,
+				9913F4E220B2C63000F9A8B0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -235,6 +265,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9913F4E220B2C63000F9A8B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/MyLayout.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MBProgressHUD.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MyLayout.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		991AB70720AA8251003C8A52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -243,6 +293,7 @@
 				991AB73D20AA8DB8003C8A52 /* MapDemoViewController.m in Sources */,
 				991AB72520AA84A9003C8A52 /* MineViewController.m in Sources */,
 				991AB72820AA84CD003C8A52 /* WorkViewController.m in Sources */,
+				9913F4E520B2C94800F9A8B0 /* MyLayoutDemoViewController.m in Sources */,
 				991AB71820AA8258003C8A52 /* main.m in Sources */,
 				991AB72B20AA84E3003C8A52 /* HomeViewController.m in Sources */,
 				991AB71020AA8251003C8A52 /* AppDelegate.m in Sources */,
@@ -381,11 +432,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Hao Hu (3L82634XR8)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = C83D8592H3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haoqix.beidouQx.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "998b7570-6cac-4667-9dcc-20aa9f01c3a5";
@@ -402,11 +459,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Hao Hu (3L82634XR8)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = C83D8592H3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haoqix.beidouQx.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "998b7570-6cac-4667-9dcc-20aa9f01c3a5";
