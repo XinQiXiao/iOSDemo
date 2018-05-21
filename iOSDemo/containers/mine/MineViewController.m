@@ -22,7 +22,7 @@
     UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 200, 30)];
     [btn setTitle:@"MyLayout" forState:(UIControlStateNormal)];
     [btn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
-    [btn addTarget:self action:@selector(toMKMap) forControlEvents:(UIControlEventTouchUpInside)];
+    [btn addTarget:self action:@selector(toMylayout) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:btn];
 }
 

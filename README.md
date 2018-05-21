@@ -27,4 +27,5 @@
 					MyLinearLayout 布局库
 					地址 https://github.com/youngsoft/MyLinearLayout
 						(用cocoaPods和Carthage方式导入都失败了，采用手工导入方式)
-						2.1流式布局（=css flex-box）
+						2.1采取手动方式导入
+						2.2流式布局（=css flex-box）

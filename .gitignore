@@ -10,5 +10,8 @@ project.xcworkspace
 # Xcode Carthage文件夹
 Carthage/
 
+# Xcode thirdLibs
+thirdLibs
+
 # VSCode
 .vscode
