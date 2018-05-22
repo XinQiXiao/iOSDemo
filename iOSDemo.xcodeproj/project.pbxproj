@@ -24,6 +24,7 @@
 		991AB73920AA87C9003C8A52 /* tab_home_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 991AB73320AA87C9003C8A52 /* tab_home_sel@2x.png */; };
 		991AB73A20AA87C9003C8A52 /* tab_mine_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 991AB73420AA87C9003C8A52 /* tab_mine_nor@2x.png */; };
 		991AB73D20AA8DB8003C8A52 /* MapDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991AB73C20AA8DB8003C8A52 /* MapDemoViewController.m */; };
+		9992481720B3BF05002F1827 /* FrameTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9992481620B3BF05002F1827 /* FrameTestViewController.m */; };
 		99B669D420B30A9300010683 /* MyBaseLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669AB20B30A8E00010683 /* MyBaseLayout.m */; };
 		99B669D520B30A9300010683 /* MyFloatLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669AD20B30A8E00010683 /* MyFloatLayout.m */; };
 		99B669D620B30A9300010683 /* MyLayoutMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669AF20B30A8E00010683 /* MyLayoutMath.m */; };
@@ -70,6 +71,9 @@
 		991AB73420AA87C9003C8A52 /* tab_mine_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_mine_nor@2x.png"; sourceTree = "<group>"; };
 		991AB73B20AA8DB8003C8A52 /* MapDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapDemoViewController.h; sourceTree = "<group>"; };
 		991AB73C20AA8DB8003C8A52 /* MapDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapDemoViewController.m; sourceTree = "<group>"; };
+		9992481520B3BF05002F1827 /* FrameTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameTestViewController.h; sourceTree = "<group>"; };
+		9992481620B3BF05002F1827 /* FrameTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameTestViewController.m; sourceTree = "<group>"; };
+		9992481B20B3C1E6002F1827 /* SystemConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemConstants.h; sourceTree = "<group>"; };
 		99B669AA20B30A8E00010683 /* MyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayout.h; sourceTree = "<group>"; };
 		99B669AB20B30A8E00010683 /* MyBaseLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseLayout.m; sourceTree = "<group>"; };
 		99B669AC20B30A8E00010683 /* MyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlowLayout.h; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 		991AB70D20AA8251003C8A52 /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9992481820B3C014002F1827 /* config */,
 				991AB72C20AA8779003C8A52 /* sources */,
 				991AB71E20AA8337003C8A52 /* containers */,
 				991AB70E20AA8251003C8A52 /* AppDelegate.h */,
@@ -214,6 +219,8 @@
 				991AB73C20AA8DB8003C8A52 /* MapDemoViewController.m */,
 				9913F4E320B2C94800F9A8B0 /* MyLayoutDemoViewController.h */,
 				9913F4E420B2C94800F9A8B0 /* MyLayoutDemoViewController.m */,
+				9992481520B3BF05002F1827 /* FrameTestViewController.h */,
+				9992481620B3BF05002F1827 /* FrameTestViewController.m */,
 			);
 			path = mine;
 			sourceTree = "<group>";
@@ -245,6 +252,22 @@
 				991AB73020AA87C8003C8A52 /* tab_work_sel@2x.png */,
 			);
 			path = tabbar;
+			sourceTree = "<group>";
+		};
+		9992481820B3C014002F1827 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				9992481920B3C029002F1827 /* constants */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		9992481920B3C029002F1827 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				9992481B20B3C1E6002F1827 /* SystemConstants.h */,
+			);
+			path = constants;
 			sourceTree = "<group>";
 		};
 		99B669A820B3064200010683 /* thirdLibs */ = {
@@ -404,6 +427,7 @@
 				99B669E320B30A9300010683 /* MyBorderline.m in Sources */,
 				99B669D420B30A9300010683 /* MyBaseLayout.m in Sources */,
 				99B669DA20B30A9300010683 /* MyDimeScale.m in Sources */,
+				9992481720B3BF05002F1827 /* FrameTestViewController.m in Sources */,
 				991AB73D20AA8DB8003C8A52 /* MapDemoViewController.m in Sources */,
 				99B669E520B30A9300010683 /* MyLinearLayout.m in Sources */,
 				99B669DE20B30A9300010683 /* MyPathLayout.m in Sources */,
