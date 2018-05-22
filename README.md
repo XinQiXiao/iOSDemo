@@ -30,8 +30,6 @@
 						2.1采取手动方式导入
 						2.2工程中增加了视图尺寸、导航栏等相关宏定义
 						2.3布局
-							1线性布局
-								参考链接：https://blog.csdn.net/yangtiang/article/details/46483999
-								1) 子视图间距设置以及自动调整大小的属性
-								2) 布局里面子视图的隐藏显示以及对UIScrollView的支持
-								TODO -> 
+							TODO 有空可以练习下，线性布局
+							链接：https://blog.csdn.net/yangtiang/article/details/46483999
+						TODO 练习别的布局MyLinearLayout中的

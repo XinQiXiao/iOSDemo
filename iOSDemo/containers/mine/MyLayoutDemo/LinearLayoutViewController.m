@@ -15,20 +15,29 @@
 @end
 
 @implementation LinearLayoutViewController
+{
+    UIView *baseView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"LinearLayouts";
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    [self setBaseLinear];
-}
 
--(void)setBaseLinear{
-    UIView *baseView = [UIView new];
+    baseView = [UIView new];
     baseView.frame = CGRectMake(0, (STATUS_HEIGHT+self.navigationController.navigationBar.frame.size.height), SCREEN_WIDTH, SCREEN_HEIGHT);
     baseView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:baseView];
+
+    [self setBaseLinear];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)setBaseLinear{
     
     MyLinearLayout *ll = [MyLinearLayout new];
     ll.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -46,7 +55,7 @@
     
     v1.myTop = 40;
     //    v1.myLeft = 50;
-    v1.myWidth = 200;
+    v1.widthSize.equalTo(ll.widthSize).multiply(0.5);
     v1.myHeight = 200;
     
     //    [v1 makeLayout:^(MyMaker *make) {
@@ -59,8 +68,9 @@
     [ll addSubview:v2];
     
     v2.myTop = 30;
-    //    v2.myLeft = v1.myLeft;
-    v2.myWidth = v1.myWidth;
+//        v2.myLeft = v1.myLeft;
+    v2.widthSize.equalTo(ll.widthSize).multiply(0.5);
+//    v2.myWidth = v1.myWidth;
     v2.myHeight = v1.myHeight;
     
     //您也可以不设置width,height而是直接设置frame的宽度和高度
@@ -74,9 +84,5 @@
     v3.myHeight = 0.5*v1.myHeight;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
