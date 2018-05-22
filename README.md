@@ -18,7 +18,7 @@
 					地图的基础使用-MKMapView
 					链接: https://www.jianshu.com/p/5f0a478738e7
 
-			# v0.3.0 (tag) 
+			# v0.3.0 (branch) 
 					1.工程用Carthage（替换cocoaPods）
 					地址：Carthage https://github.com/Carthage/Carthage
 					参考：https://www.jianshu.com/p/f33972b08648
@@ -33,3 +33,5 @@
 							TODO 有空可以练习下，线性布局
 							链接：https://blog.csdn.net/yangtiang/article/details/46483999
 						TODO 练习别的布局MyLinearLayout中的
+
+			
