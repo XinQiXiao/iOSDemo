@@ -29,4 +29,9 @@
 						(用cocoaPods和Carthage方式导入都失败了，采用手工导入方式)
 						2.1采取手动方式导入
 						2.2工程中增加了视图尺寸、导航栏等相关宏定义
-						2.3流式布局（=css flex-box）
+						2.3布局
+							1线性布局
+								参考链接：https://blog.csdn.net/yangtiang/article/details/46483999
+								1) 子视图间距设置以及自动调整大小的属性
+								2) 布局里面子视图的隐藏显示以及对UIScrollView的支持
+								TODO -> 

@@ -8,6 +8,7 @@
 
 #import "FrameTestViewController.h"
 #import "SystemConstants.h"
+#import "MyLayout.h"
 
 @interface FrameTestViewController ()
 
@@ -25,8 +26,24 @@
     
     UIView *baseView = [UIView new];
     baseView.frame = CGRectMake(0, (STATUS_HEIGHT+self.navigationController.navigationBar.frame.size.height), SCREEN_WIDTH, SCREEN_HEIGHT);
-    baseView.backgroundColor = [UIColor grayColor];
+    baseView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:baseView];
+    
+    UIView *v1 = [UIView new];
+    v1.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
+    v1.bounds = CGRectMake(0, 0, 100, 200);
+    v1.backgroundColor = [UIColor greenColor];
+    [baseView addSubview:v1];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.prefersLargeTitles = NO;
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+//    self.navigationController.navigationBar.prefersLargeTitles = NO;
 }
 
 - (void)didReceiveMemoryWarning {
