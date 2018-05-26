@@ -26,12 +26,12 @@
 					2.导入MyLinearLayout库
 					MyLinearLayout 布局库
 					地址 https://github.com/youngsoft/MyLinearLayout
-						(用cocoaPods和Carthage方式导入都失败了，采用手工导入方式)
-						2.1采取手动方式导入
-						2.2工程中增加了视图尺寸、导航栏等相关宏定义
+						2.1工程中增加了视图尺寸、导航栏等相关宏定义
+						2.2 
+							a.采用手工方式导入，正常使用
+							b.采用carthage方式导入成功了，感谢欧阳大哥的更新，（MyLinearLayout tag 1.5.3 carthage导入是失败的，tag 1.5.4 采用 carthage 方式导入工程是成功的）
+							c.本地cocapods 无法导入最新版本
 						2.3布局
 							TODO 有空可以练习下，线性布局
 							链接：https://blog.csdn.net/yangtiang/article/details/46483999
 						TODO 练习别的布局MyLinearLayout中的
-
-			

@@ -10,7 +10,6 @@
 		99135F5220B3F5CB004AD17F /* LinearLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99135F5120B3F5CB004AD17F /* LinearLayoutViewController.m */; };
 		99135F5520B3F84B004AD17F /* FlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99135F5420B3F84B004AD17F /* FlowLayoutViewController.m */; };
 		9913F4FC20B2DDBC00F9A8B0 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9913F4FB20B2DDBB00F9A8B0 /* MBProgressHUD.framework */; };
-		9913F4FE20B2DF0600F9A8B0 /* MyLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9913F4E020B2C60A00F9A8B0 /* MyLayout.framework */; };
 		991AB71020AA8251003C8A52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 991AB70F20AA8251003C8A52 /* AppDelegate.m */; };
 		991AB71220AA8257003C8A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 991AB71120AA8257003C8A52 /* Assets.xcassets */; };
 		991AB71520AA8257003C8A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991AB71320AA8257003C8A52 /* LaunchScreen.storyboard */; };
@@ -26,24 +25,7 @@
 		991AB73A20AA87C9003C8A52 /* tab_mine_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 991AB73420AA87C9003C8A52 /* tab_mine_nor@2x.png */; };
 		991AB73D20AA8DB8003C8A52 /* MapDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991AB73C20AA8DB8003C8A52 /* MapDemoViewController.m */; };
 		9992481720B3BF05002F1827 /* FrameTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9992481620B3BF05002F1827 /* FrameTestViewController.m */; };
-		99B669D420B30A9300010683 /* MyBaseLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669AB20B30A8E00010683 /* MyBaseLayout.m */; };
-		99B669D520B30A9300010683 /* MyFloatLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669AD20B30A8E00010683 /* MyFloatLayout.m */; };
-		99B669D620B30A9300010683 /* MyLayoutMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669AF20B30A8E00010683 /* MyLayoutMath.m */; };
-		99B669D720B30A9300010683 /* MyLayoutPos.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669B220B30A8E00010683 /* MyLayoutPos.m */; };
-		99B669D820B30A9300010683 /* MyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669B320B30A8E00010683 /* MyFlowLayout.m */; };
-		99B669D920B30A9300010683 /* MyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669B620B30A8F00010683 /* MyMaker.m */; };
-		99B669DA20B30A9300010683 /* MyDimeScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669B820B30A8F00010683 /* MyDimeScale.m */; };
-		99B669DB20B30A9300010683 /* MyFrameLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669B920B30A8F00010683 /* MyFrameLayout.m */; };
-		99B669DC20B30A9300010683 /* MyRelativeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669BC20B30A8F00010683 /* MyRelativeLayout.m */; };
-		99B669DD20B30A9300010683 /* MyGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669BE20B30A9000010683 /* MyGridLayout.m */; };
-		99B669DE20B30A9300010683 /* MyPathLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669BF20B30A9000010683 /* MyPathLayout.m */; };
-		99B669DF20B30A9300010683 /* MyLayoutSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669C820B30A9100010683 /* MyLayoutSize.m */; };
-		99B669E020B30A9300010683 /* MyLayoutDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669C920B30A9100010683 /* MyLayoutDelegate.m */; };
-		99B669E120B30A9300010683 /* MyGridNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669CA20B30A9100010683 /* MyGridNode.m */; };
-		99B669E220B30A9300010683 /* MyLayoutSizeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669CB20B30A9100010683 /* MyLayoutSizeClass.m */; };
-		99B669E320B30A9300010683 /* MyBorderline.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669CC20B30A9100010683 /* MyBorderline.m */; };
-		99B669E420B30A9300010683 /* MyTableLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669D120B30A9200010683 /* MyTableLayout.m */; };
-		99B669E520B30A9300010683 /* MyLinearLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B669D220B30A9200010683 /* MyLinearLayout.m */; };
+		99F75D7620B950B60007C49C /* MyLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9913F4E020B2C60A00F9A8B0 /* MyLayout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,48 +59,6 @@
 		9992481520B3BF05002F1827 /* FrameTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameTestViewController.h; sourceTree = "<group>"; };
 		9992481620B3BF05002F1827 /* FrameTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameTestViewController.m; sourceTree = "<group>"; };
 		9992481B20B3C1E6002F1827 /* SystemConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemConstants.h; sourceTree = "<group>"; };
-		99B669AA20B30A8E00010683 /* MyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayout.h; sourceTree = "<group>"; };
-		99B669AB20B30A8E00010683 /* MyBaseLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseLayout.m; sourceTree = "<group>"; };
-		99B669AC20B30A8E00010683 /* MyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlowLayout.h; sourceTree = "<group>"; };
-		99B669AD20B30A8E00010683 /* MyFloatLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFloatLayout.m; sourceTree = "<group>"; };
-		99B669AE20B30A8E00010683 /* MyLayoutMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutMath.h; sourceTree = "<group>"; };
-		99B669AF20B30A8E00010683 /* MyLayoutMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayoutMath.m; sourceTree = "<group>"; };
-		99B669B020B30A8E00010683 /* MyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMaker.h; sourceTree = "<group>"; };
-		99B669B120B30A8E00010683 /* MyLayoutSizeClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutSizeClass.h; sourceTree = "<group>"; };
-		99B669B220B30A8E00010683 /* MyLayoutPos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayoutPos.m; sourceTree = "<group>"; };
-		99B669B320B30A8E00010683 /* MyFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFlowLayout.m; sourceTree = "<group>"; };
-		99B669B420B30A8F00010683 /* MyBaseLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseLayout.h; sourceTree = "<group>"; };
-		99B669B520B30A8F00010683 /* MyLayoutInner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutInner.h; sourceTree = "<group>"; };
-		99B669B620B30A8F00010683 /* MyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMaker.m; sourceTree = "<group>"; };
-		99B669B720B30A8F00010683 /* MyPathLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPathLayout.h; sourceTree = "<group>"; };
-		99B669B820B30A8F00010683 /* MyDimeScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDimeScale.m; sourceTree = "<group>"; };
-		99B669B920B30A8F00010683 /* MyFrameLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFrameLayout.m; sourceTree = "<group>"; };
-		99B669BA20B30A8F00010683 /* MyLayoutPosInner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutPosInner.h; sourceTree = "<group>"; };
-		99B669BB20B30A8F00010683 /* MyLinearLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLinearLayout.h; sourceTree = "<group>"; };
-		99B669BC20B30A8F00010683 /* MyRelativeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRelativeLayout.m; sourceTree = "<group>"; };
-		99B669BD20B30A9000010683 /* MyDimeScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDimeScale.h; sourceTree = "<group>"; };
-		99B669BE20B30A9000010683 /* MyGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGridLayout.m; sourceTree = "<group>"; };
-		99B669BF20B30A9000010683 /* MyPathLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPathLayout.m; sourceTree = "<group>"; };
-		99B669C020B30A9000010683 /* MyTableLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableLayout.h; sourceTree = "<group>"; };
-		99B669C120B30A9000010683 /* MyLayoutSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutSize.h; sourceTree = "<group>"; };
-		99B669C220B30A9000010683 /* MyGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGrid.h; sourceTree = "<group>"; };
-		99B669C320B30A9100010683 /* MyGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGridLayout.h; sourceTree = "<group>"; };
-		99B669C420B30A9100010683 /* MyBorderline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBorderline.h; sourceTree = "<group>"; };
-		99B669C520B30A9100010683 /* MyGridNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGridNode.h; sourceTree = "<group>"; };
-		99B669C620B30A9100010683 /* MyFloatLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFloatLayout.h; sourceTree = "<group>"; };
-		99B669C720B30A9100010683 /* MyLayoutPos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutPos.h; sourceTree = "<group>"; };
-		99B669C820B30A9100010683 /* MyLayoutSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayoutSize.m; sourceTree = "<group>"; };
-		99B669C920B30A9100010683 /* MyLayoutDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayoutDelegate.m; sourceTree = "<group>"; };
-		99B669CA20B30A9100010683 /* MyGridNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGridNode.m; sourceTree = "<group>"; };
-		99B669CB20B30A9100010683 /* MyLayoutSizeClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayoutSizeClass.m; sourceTree = "<group>"; };
-		99B669CC20B30A9100010683 /* MyBorderline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBorderline.m; sourceTree = "<group>"; };
-		99B669CD20B30A9200010683 /* MyFrameLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFrameLayout.h; sourceTree = "<group>"; };
-		99B669CE20B30A9200010683 /* MyLayoutSizeInner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutSizeInner.h; sourceTree = "<group>"; };
-		99B669CF20B30A9200010683 /* MyRelativeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRelativeLayout.h; sourceTree = "<group>"; };
-		99B669D020B30A9200010683 /* MyLayoutDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutDelegate.h; sourceTree = "<group>"; };
-		99B669D120B30A9200010683 /* MyTableLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableLayout.m; sourceTree = "<group>"; };
-		99B669D220B30A9200010683 /* MyLinearLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLinearLayout.m; sourceTree = "<group>"; };
-		99B669D320B30A9300010683 /* MyLayoutDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayoutDef.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9913F4FE20B2DF0600F9A8B0 /* MyLayout.framework in Frameworks */,
+				99F75D7620B950B60007C49C /* MyLayout.framework in Frameworks */,
 				9913F4FC20B2DDBC00F9A8B0 /* MBProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,58 +226,8 @@
 		99B669A820B3064200010683 /* thirdLibs */ = {
 			isa = PBXGroup;
 			children = (
-				99B669A920B3087B00010683 /* MyLayout */,
 			);
 			path = thirdLibs;
-			sourceTree = "<group>";
-		};
-		99B669A920B3087B00010683 /* MyLayout */ = {
-			isa = PBXGroup;
-			children = (
-				99B669B420B30A8F00010683 /* MyBaseLayout.h */,
-				99B669AB20B30A8E00010683 /* MyBaseLayout.m */,
-				99B669C420B30A9100010683 /* MyBorderline.h */,
-				99B669CC20B30A9100010683 /* MyBorderline.m */,
-				99B669BD20B30A9000010683 /* MyDimeScale.h */,
-				99B669B820B30A8F00010683 /* MyDimeScale.m */,
-				99B669C620B30A9100010683 /* MyFloatLayout.h */,
-				99B669AD20B30A8E00010683 /* MyFloatLayout.m */,
-				99B669AC20B30A8E00010683 /* MyFlowLayout.h */,
-				99B669B320B30A8E00010683 /* MyFlowLayout.m */,
-				99B669CD20B30A9200010683 /* MyFrameLayout.h */,
-				99B669B920B30A8F00010683 /* MyFrameLayout.m */,
-				99B669C220B30A9000010683 /* MyGrid.h */,
-				99B669C320B30A9100010683 /* MyGridLayout.h */,
-				99B669BE20B30A9000010683 /* MyGridLayout.m */,
-				99B669C520B30A9100010683 /* MyGridNode.h */,
-				99B669CA20B30A9100010683 /* MyGridNode.m */,
-				99B669AA20B30A8E00010683 /* MyLayout.h */,
-				99B669D320B30A9300010683 /* MyLayoutDef.h */,
-				99B669D020B30A9200010683 /* MyLayoutDelegate.h */,
-				99B669C920B30A9100010683 /* MyLayoutDelegate.m */,
-				99B669B520B30A8F00010683 /* MyLayoutInner.h */,
-				99B669AE20B30A8E00010683 /* MyLayoutMath.h */,
-				99B669AF20B30A8E00010683 /* MyLayoutMath.m */,
-				99B669C720B30A9100010683 /* MyLayoutPos.h */,
-				99B669B220B30A8E00010683 /* MyLayoutPos.m */,
-				99B669BA20B30A8F00010683 /* MyLayoutPosInner.h */,
-				99B669C120B30A9000010683 /* MyLayoutSize.h */,
-				99B669C820B30A9100010683 /* MyLayoutSize.m */,
-				99B669B120B30A8E00010683 /* MyLayoutSizeClass.h */,
-				99B669CB20B30A9100010683 /* MyLayoutSizeClass.m */,
-				99B669CE20B30A9200010683 /* MyLayoutSizeInner.h */,
-				99B669BB20B30A8F00010683 /* MyLinearLayout.h */,
-				99B669D220B30A9200010683 /* MyLinearLayout.m */,
-				99B669B020B30A8E00010683 /* MyMaker.h */,
-				99B669B620B30A8F00010683 /* MyMaker.m */,
-				99B669B720B30A8F00010683 /* MyPathLayout.h */,
-				99B669BF20B30A9000010683 /* MyPathLayout.m */,
-				99B669CF20B30A9200010683 /* MyRelativeLayout.h */,
-				99B669BC20B30A8F00010683 /* MyRelativeLayout.m */,
-				99B669C020B30A9000010683 /* MyTableLayout.h */,
-				99B669D120B30A9200010683 /* MyTableLayout.m */,
-			);
-			path = MyLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,7 +312,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/MBProgressHUD.framework",
 			);
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MyLayout.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,32 +325,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99B669DB20B30A9300010683 /* MyFrameLayout.m in Sources */,
-				99B669E320B30A9300010683 /* MyBorderline.m in Sources */,
-				99B669D420B30A9300010683 /* MyBaseLayout.m in Sources */,
-				99B669DA20B30A9300010683 /* MyDimeScale.m in Sources */,
 				9992481720B3BF05002F1827 /* FrameTestViewController.m in Sources */,
 				99135F5220B3F5CB004AD17F /* LinearLayoutViewController.m in Sources */,
 				991AB73D20AA8DB8003C8A52 /* MapDemoViewController.m in Sources */,
-				99B669E520B30A9300010683 /* MyLinearLayout.m in Sources */,
-				99B669DE20B30A9300010683 /* MyPathLayout.m in Sources */,
-				99B669E120B30A9300010683 /* MyGridNode.m in Sources */,
 				991AB72520AA84A9003C8A52 /* MineViewController.m in Sources */,
 				991AB72820AA84CD003C8A52 /* WorkViewController.m in Sources */,
-				99B669D920B30A9300010683 /* MyMaker.m in Sources */,
-				99B669E020B30A9300010683 /* MyLayoutDelegate.m in Sources */,
-				99B669DD20B30A9300010683 /* MyGridLayout.m in Sources */,
-				99B669D720B30A9300010683 /* MyLayoutPos.m in Sources */,
 				991AB71820AA8258003C8A52 /* main.m in Sources */,
 				991AB72B20AA84E3003C8A52 /* HomeViewController.m in Sources */,
-				99B669DF20B30A9300010683 /* MyLayoutSize.m in Sources */,
-				99B669D620B30A9300010683 /* MyLayoutMath.m in Sources */,
-				99B669E220B30A9300010683 /* MyLayoutSizeClass.m in Sources */,
 				99135F5520B3F84B004AD17F /* FlowLayoutViewController.m in Sources */,
-				99B669D820B30A9300010683 /* MyFlowLayout.m in Sources */,
-				99B669DC20B30A9300010683 /* MyRelativeLayout.m in Sources */,
-				99B669D520B30A9300010683 /* MyFloatLayout.m in Sources */,
-				99B669E420B30A9300010683 /* MyTableLayout.m in Sources */,
 				991AB71020AA8251003C8A52 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

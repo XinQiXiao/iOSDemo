@@ -8,7 +8,7 @@
 
 #import "LinearLayoutViewController.h"
 #import "SystemConstants.h"
-#import "MyLayout.h"
+#import <MyLayout/MyLayout.h>
 
 @interface LinearLayoutViewController ()
 
