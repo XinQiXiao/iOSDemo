@@ -7,7 +7,7 @@
 //
 
 #import "FlowLayoutViewController.h"
-#import "MyLayout.h"
+#import <MyLayout/MyLayout.h>
 #import "SystemConstants.h"
 
 @interface FlowLayoutViewController ()
