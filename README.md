@@ -39,5 +39,7 @@
 				TODO 练习AutoLayout/Size class
 						 练习Masonry
 						 链接：https://www.jianshu.com/p/c12eb90b16fc
-			
+
+			# v0.5.0 测试系统分享功能
+				UIActivityViewController 系统分享功能
 
