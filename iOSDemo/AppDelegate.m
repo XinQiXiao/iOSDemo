@@ -47,7 +47,7 @@
     mineNav.tabBarItem.selectedImage = [UIImage imageNamed:@"tab_mine_sel"];
     
     UITabBarController *tabbar = [UITabBarController new];
-    tabbar.viewControllers = @[homeNav, workNav, mineNav];
+    tabbar.viewControllers = @[workNav, homeNav, mineNav];
     
     return tabbar;
 }

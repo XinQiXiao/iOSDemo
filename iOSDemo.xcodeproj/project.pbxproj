@@ -24,6 +24,9 @@
 		991AB73920AA87C9003C8A52 /* tab_home_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 991AB73320AA87C9003C8A52 /* tab_home_sel@2x.png */; };
 		991AB73A20AA87C9003C8A52 /* tab_mine_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 991AB73420AA87C9003C8A52 /* tab_mine_nor@2x.png */; };
 		991AB73D20AA8DB8003C8A52 /* MapDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991AB73C20AA8DB8003C8A52 /* MapDemoViewController.m */; };
+		994664432114918A00F228E0 /* tupian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 994664422114918A00F228E0 /* tupian.jpg */; };
+		99825D00211430100089B85B /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99825CFF211430100089B85B /* FileViewController.m */; };
+		99825D03211452600089B85B /* FileMgrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99825D02211452600089B85B /* FileMgrViewController.m */; };
 		9992481720B3BF05002F1827 /* FrameTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9992481620B3BF05002F1827 /* FrameTestViewController.m */; };
 		99F75D7620B950B60007C49C /* MyLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9913F4E020B2C60A00F9A8B0 /* MyLayout.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,11 @@
 		991AB73420AA87C9003C8A52 /* tab_mine_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_mine_nor@2x.png"; sourceTree = "<group>"; };
 		991AB73B20AA8DB8003C8A52 /* MapDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapDemoViewController.h; sourceTree = "<group>"; };
 		991AB73C20AA8DB8003C8A52 /* MapDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapDemoViewController.m; sourceTree = "<group>"; };
+		994664422114918A00F228E0 /* tupian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tupian.jpg; sourceTree = "<group>"; };
+		99825CFE211430100089B85B /* FileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
+		99825CFF211430100089B85B /* FileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
+		99825D01211452600089B85B /* FileMgrViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileMgrViewController.h; sourceTree = "<group>"; };
+		99825D02211452600089B85B /* FileMgrViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileMgrViewController.m; sourceTree = "<group>"; };
 		9992481520B3BF05002F1827 /* FrameTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameTestViewController.h; sourceTree = "<group>"; };
 		9992481620B3BF05002F1827 /* FrameTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameTestViewController.m; sourceTree = "<group>"; };
 		9992481B20B3C1E6002F1827 /* SystemConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemConstants.h; sourceTree = "<group>"; };
@@ -99,6 +107,7 @@
 		991AB70220AA8250003C8A52 = {
 			isa = PBXGroup;
 			children = (
+				994664412114915D00F228E0 /* images */,
 				99B669A820B3064200010683 /* thirdLibs */,
 				991AB70D20AA8251003C8A52 /* iOSDemo */,
 				991AB70C20AA8251003C8A52 /* Products */,
@@ -162,6 +171,10 @@
 			children = (
 				991AB72620AA84CD003C8A52 /* WorkViewController.h */,
 				991AB72720AA84CD003C8A52 /* WorkViewController.m */,
+				99825CFE211430100089B85B /* FileViewController.h */,
+				99825CFF211430100089B85B /* FileViewController.m */,
+				99825D01211452600089B85B /* FileMgrViewController.h */,
+				99825D02211452600089B85B /* FileMgrViewController.m */,
 			);
 			path = work;
 			sourceTree = "<group>";
@@ -205,6 +218,14 @@
 				991AB73020AA87C8003C8A52 /* tab_work_sel@2x.png */,
 			);
 			path = tabbar;
+			sourceTree = "<group>";
+		};
+		994664412114915D00F228E0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				994664422114918A00F228E0 /* tupian.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		9992481820B3C014002F1827 /* config */ = {
@@ -291,6 +312,7 @@
 				991AB73620AA87C9003C8A52 /* tab_work_sel@2x.png in Resources */,
 				991AB71220AA8257003C8A52 /* Assets.xcassets in Resources */,
 				991AB73920AA87C9003C8A52 /* tab_home_sel@2x.png in Resources */,
+				994664432114918A00F228E0 /* tupian.jpg in Resources */,
 				991AB73820AA87C9003C8A52 /* tab_mine_sel@2x.png in Resources */,
 				991AB73520AA87C9003C8A52 /* tab_work_nor@2x.png in Resources */,
 				991AB73A20AA87C9003C8A52 /* tab_mine_nor@2x.png in Resources */,
@@ -327,6 +349,8 @@
 			files = (
 				9992481720B3BF05002F1827 /* FrameTestViewController.m in Sources */,
 				99135F5220B3F5CB004AD17F /* LinearLayoutViewController.m in Sources */,
+				99825D00211430100089B85B /* FileViewController.m in Sources */,
+				99825D03211452600089B85B /* FileMgrViewController.m in Sources */,
 				991AB73D20AA8DB8003C8A52 /* MapDemoViewController.m in Sources */,
 				991AB72520AA84A9003C8A52 /* MineViewController.m in Sources */,
 				991AB72820AA84CD003C8A52 /* WorkViewController.m in Sources */,

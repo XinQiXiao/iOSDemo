@@ -7,6 +7,8 @@
 //
 
 #import "WorkViewController.h"
+#import "FileViewController.h"
+#import "FileMgrViewController.h"
 
 @interface WorkViewController ()
 
@@ -25,6 +27,26 @@
     [shareBtn setTitleColor:[UIColor redColor] forState:(UIControlStateNormal)];
     [shareBtn addTarget:self action:@selector(shareBtnClick:) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:shareBtn];
+    
+    UIButton *fileBtn = [UIButton new];
+    fileBtn.frame = CGRectMake(50, 150, 100, 30);
+    [fileBtn setTitle:@"文件管理" forState:(UIControlStateNormal)];
+    [fileBtn setTitleColor:[UIColor redColor] forState:(UIControlStateNormal)];
+    [fileBtn addTarget:self action:@selector(toFilePage) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:fileBtn];
+    
+    UIButton *fileMgrBtn = [UIButton new];
+    fileMgrBtn.frame = CGRectMake(50, 200, 100, 30);
+    [fileMgrBtn setTitle:@"文件操作" forState:(UIControlStateNormal)];
+    [fileMgrBtn setTitleColor:[UIColor redColor] forState:(UIControlStateNormal)];
+    [fileMgrBtn addTarget:self action:@selector(toFileMgrPage) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:fileMgrBtn];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    // tabbar 不隐藏
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,6 +70,16 @@
             NSLog(@"分享失败");
         }
     };
+}
+
+-(void)toFilePage{
+    [self.navigationController pushViewController:[FileViewController new] animated:YES];
+    self.tabBarController.tabBar.hidden = YES;
+}
+
+-(void)toFileMgrPage{
+    [self.navigationController pushViewController:[FileMgrViewController new] animated:YES];
+    self.tabBarController.tabBar.hidden = YES;
 }
 
 @end

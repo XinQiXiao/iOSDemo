@@ -43,3 +43,11 @@
 			# v0.5.0 测试系统分享功能
 				UIActivityViewController 系统分享功能
 
+			# v0.5.1 文件操作
+				参考 url: https://www.jianshu.com/p/e3461a905a14
+				FileViewController 
+
+				// 创建本地文件 并分享 
+				FileMgrViewController 
+
+				遇到权限问题 url： https://blog.csdn.net/qq_22080737/article/details/56844900

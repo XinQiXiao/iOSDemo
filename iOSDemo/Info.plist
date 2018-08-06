@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App 需要您的同意才能读取媒体资料库</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>应用需要在使用期间访问您的位置</string>
 	<key>NSLocationAlwaysUsageDescription</key>
