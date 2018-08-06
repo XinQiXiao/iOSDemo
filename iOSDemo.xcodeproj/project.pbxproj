@@ -24,6 +24,8 @@
 		991AB73920AA87C9003C8A52 /* tab_home_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 991AB73320AA87C9003C8A52 /* tab_home_sel@2x.png */; };
 		991AB73A20AA87C9003C8A52 /* tab_mine_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 991AB73420AA87C9003C8A52 /* tab_mine_nor@2x.png */; };
 		991AB73D20AA8DB8003C8A52 /* MapDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991AB73C20AA8DB8003C8A52 /* MapDemoViewController.m */; };
+		993DE0912118022A00CF6890 /* FileShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993DE0902118022A00CF6890 /* FileShareViewController.m */; };
+		993DE093211806D800CF6890 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 993DE092211806D800CF6890 /* test.pdf */; };
 		994664432114918A00F228E0 /* tupian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 994664422114918A00F228E0 /* tupian.jpg */; };
 		99825D00211430100089B85B /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99825CFF211430100089B85B /* FileViewController.m */; };
 		99825D03211452600089B85B /* FileMgrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99825D02211452600089B85B /* FileMgrViewController.m */; };
@@ -59,6 +61,9 @@
 		991AB73420AA87C9003C8A52 /* tab_mine_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_mine_nor@2x.png"; sourceTree = "<group>"; };
 		991AB73B20AA8DB8003C8A52 /* MapDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapDemoViewController.h; sourceTree = "<group>"; };
 		991AB73C20AA8DB8003C8A52 /* MapDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapDemoViewController.m; sourceTree = "<group>"; };
+		993DE08F2118022A00CF6890 /* FileShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileShareViewController.h; sourceTree = "<group>"; };
+		993DE0902118022A00CF6890 /* FileShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileShareViewController.m; sourceTree = "<group>"; };
+		993DE092211806D800CF6890 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
 		994664422114918A00F228E0 /* tupian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tupian.jpg; sourceTree = "<group>"; };
 		99825CFE211430100089B85B /* FileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
 		99825CFF211430100089B85B /* FileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
@@ -126,6 +131,7 @@
 		991AB70D20AA8251003C8A52 /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				993DE092211806D800CF6890 /* test.pdf */,
 				9992481820B3C014002F1827 /* config */,
 				991AB72C20AA8779003C8A52 /* sources */,
 				991AB71E20AA8337003C8A52 /* containers */,
@@ -175,6 +181,8 @@
 				99825CFF211430100089B85B /* FileViewController.m */,
 				99825D01211452600089B85B /* FileMgrViewController.h */,
 				99825D02211452600089B85B /* FileMgrViewController.m */,
+				993DE08F2118022A00CF6890 /* FileShareViewController.h */,
+				993DE0902118022A00CF6890 /* FileShareViewController.m */,
 			);
 			path = work;
 			sourceTree = "<group>";
@@ -313,6 +321,7 @@
 				991AB71220AA8257003C8A52 /* Assets.xcassets in Resources */,
 				991AB73920AA87C9003C8A52 /* tab_home_sel@2x.png in Resources */,
 				994664432114918A00F228E0 /* tupian.jpg in Resources */,
+				993DE093211806D800CF6890 /* test.pdf in Resources */,
 				991AB73820AA87C9003C8A52 /* tab_mine_sel@2x.png in Resources */,
 				991AB73520AA87C9003C8A52 /* tab_work_nor@2x.png in Resources */,
 				991AB73A20AA87C9003C8A52 /* tab_mine_nor@2x.png in Resources */,
@@ -357,6 +366,7 @@
 				991AB71820AA8258003C8A52 /* main.m in Sources */,
 				991AB72B20AA84E3003C8A52 /* HomeViewController.m in Sources */,
 				99135F5520B3F84B004AD17F /* FlowLayoutViewController.m in Sources */,
+				993DE0912118022A00CF6890 /* FileShareViewController.m in Sources */,
 				991AB71020AA8251003C8A52 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

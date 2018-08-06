@@ -51,3 +51,6 @@
 				FileMgrViewController 
 
 				遇到权限问题 url： https://blog.csdn.net/qq_22080737/article/details/56844900
+
+				UIActivityViewController 调用系统分享，分享文字，图片 url,
+				UIDocumentInteractionController 分享和预览文件

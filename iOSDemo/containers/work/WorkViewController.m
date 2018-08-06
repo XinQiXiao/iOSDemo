@@ -9,6 +9,7 @@
 #import "WorkViewController.h"
 #import "FileViewController.h"
 #import "FileMgrViewController.h"
+#import "FileShareViewController.h"
 
 @interface WorkViewController ()
 
@@ -41,6 +42,13 @@
     [fileMgrBtn setTitleColor:[UIColor redColor] forState:(UIControlStateNormal)];
     [fileMgrBtn addTarget:self action:@selector(toFileMgrPage) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:fileMgrBtn];
+    
+    UIButton *fileMgrBtn2 = [UIButton new];
+    fileMgrBtn2.frame = CGRectMake(50, 250, 100, 30);
+    [fileMgrBtn2 setTitle:@"文件操作2" forState:(UIControlStateNormal)];
+    [fileMgrBtn2 setTitleColor:[UIColor redColor] forState:(UIControlStateNormal)];
+    [fileMgrBtn2 addTarget:self action:@selector(toFileSharePage) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:fileMgrBtn2];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -79,6 +87,11 @@
 
 -(void)toFileMgrPage{
     [self.navigationController pushViewController:[FileMgrViewController new] animated:YES];
+    self.tabBarController.tabBar.hidden = YES;
+}
+
+-(void)toFileSharePage{
+    [self.navigationController pushViewController:[FileShareViewController new] animated:YES];
     self.tabBarController.tabBar.hidden = YES;
 }
 

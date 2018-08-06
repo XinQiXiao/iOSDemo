@@ -14,7 +14,7 @@
 
 @implementation FileMgrViewController
 {
-    NSString *shareFilePath;
+    NSString *fileName;
 }
 
 - (void)viewDidLoad {
@@ -49,37 +49,78 @@
     // TODO 用系统方法分享出去
 }
 -(void)createLocalFile{
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask,YES);
-    NSString *docPath = [paths lastObject];
-    NSLog(@"文件 homePath=>%@", docPath);
-    NSString *fileName = @"testFile.txt";
-    shareFilePath = [docPath stringByAppendingPathComponent:fileName];
-    NSLog(@"文件 shareFilePath=>%@", shareFilePath);
-    
-     NSString *fileContent = @"这些是文件内容,这些是文件内容,这些是文件内容,这些是文件内容,这些是文件内容";
-    if(![fileManager fileExistsAtPath:shareFilePath]){
-        BOOL success = [fileManager createFileAtPath:shareFilePath contents:[fileContent dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
-        if(success){
-            NSLog(@"写入文件成功");
-        }
-    } {
-        NSLog(@"文件已存在");
-    }
-    
+//    NSFileManager *fileManager = [NSFileManager defaultManager];
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask,YES);
+//    NSString *docPath = [paths lastObject];
+//    NSLog(@"文件 homePath=>%@", docPath);
+//    fileName = @"testFile.txt";
+//    NSString *shareFilePath = [docPath stringByAppendingPathComponent:fileName];
+//    NSLog(@"文件 shareFilePath=>%@", shareFilePath);
+//
+//    NSString *fileContent = @"这些是文件内容,这些是文件内容,这些是文件内容,这些是文件内容,这些是文件内容";
+//    if(![fileManager fileExistsAtPath:shareFilePath]){
+//        BOOL success = [fileManager createFileAtPath:shareFilePath contents:[fileContent dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
+//        if(success){
+//            NSLog(@"写入文件成功");
+//        }
+//    } {
+//        NSLog(@"文件已存在");
+//    }
+    [self saveText:@"哈哈哈" atPath:@"hello"];
     
 }
 
+-(NSURL *)getDocumentsDirectoryPath
+{
+    return [[[NSFileManager defaultManager]URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask]lastObject];
+}
+
+-(void)saveText:(NSString *)textTobeSaved atPath:(NSString*)fileName
+{
+    NSString *filePath = [NSString stringWithFormat:@"%@.text",fileName];
+    
+    NSString *path = [[self getDocumentsDirectoryPath].path
+                      stringByAppendingPathComponent:filePath];
+    NSFileHandle *fileHandler = [NSFileHandle fileHandleForWritingAtPath:path];
+    if(fileHandler == nil) {
+        [[NSFileManager defaultManager] createFileAtPath:path contents:nil attributes:nil];
+        fileHandler = [NSFileHandle fileHandleForWritingAtPath:path];
+        NSLog(@"111");
+    } else {
+        textTobeSaved = [NSString stringWithFormat:@"\n-----------------------\n %@",textTobeSaved];
+        [fileHandler seekToEndOfFile];
+        NSLog(@"222");
+    }
+    
+    [fileHandler writeData:[textTobeSaved dataUsingEncoding:NSUTF8StringEncoding]];
+    [fileHandler closeFile];
+    
+    if([[NSFileManager defaultManager] fileExistsAtPath:path]){
+        NSLog(@"file exist");
+    } else {
+        NSLog(@"file isn't exist");
+    }
+}
+
 -(void)shareBtnClick:(id)sender{
+    
+    // 获取分享文件路径
+//    NSURL *urlToShare = [self getDocumentsDirectoryPath];
+//    NSLog(@"urlToShare =%@", urlToShare);
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"pdf"];
+    NSURL *urlToShare = [NSURL fileURLWithPath:filePath];
+    
+    NSLog(@"urlToShare =%@", urlToShare);
+    
     NSString *textToShare = @"分享";
-//    ns
-    NSURL *urlToShare = [NSURL fileURLWithPath:shareFilePath];
+
     NSArray *activityItems = @[textToShare, urlToShare];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc]initWithActivityItems:activityItems applicationActivities:nil];
     activityVC.excludedActivityTypes = @[];
-    
+
     [self presentViewController:activityVC animated:YES completion:nil];
-    
+
     activityVC.completionWithItemsHandler = ^(UIActivityType  _Nullable activityType, BOOL completed, NSArray * _Nullable returnedItems, NSError * _Nullable activityError) {
         if(completed){
             NSLog(@"分享成功");
