@@ -45,10 +45,10 @@
 }
 
 -(void)openDocument{
-//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"pdf"];
-    NSLog(@"文件 shareFilePath=>%@", shareFilePath);
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"pdf"];
+//    NSLog(@"文件 shareFilePath=>%@", shareFilePath);
     documentController = [UIDocumentInteractionController new];
-    documentController.URL = [NSURL fileURLWithPath:shareFilePath];
+    documentController.URL = [NSURL fileURLWithPath:filePath];
     documentController.delegate = self;
     documentController.UTI = @"com.adobe.pdf";
     [documentController presentOpenInMenuFromRect:CGRectZero inView:self.view animated:YES];

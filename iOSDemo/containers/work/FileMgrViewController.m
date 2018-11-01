@@ -108,14 +108,18 @@
 //    NSURL *urlToShare = [self getDocumentsDirectoryPath];
 //    NSLog(@"urlToShare =%@", urlToShare);
     
+    
+    
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"pdf"];
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
     NSURL *urlToShare = [NSURL fileURLWithPath:filePath];
     
+    NSLog(@"data =%@", data);
     NSLog(@"urlToShare =%@", urlToShare);
     
-    NSString *textToShare = @"分享";
+//    NSString *textToShare = @"分享";
 
-    NSArray *activityItems = @[textToShare, urlToShare];
+    NSArray *activityItems = @[data, urlToShare];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc]initWithActivityItems:activityItems applicationActivities:nil];
     activityVC.excludedActivityTypes = @[];
 
