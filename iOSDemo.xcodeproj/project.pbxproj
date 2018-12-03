@@ -30,6 +30,7 @@
 		99825D00211430100089B85B /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99825CFF211430100089B85B /* FileViewController.m */; };
 		99825D03211452600089B85B /* FileMgrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99825D02211452600089B85B /* FileMgrViewController.m */; };
 		9992481720B3BF05002F1827 /* FrameTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9992481620B3BF05002F1827 /* FrameTestViewController.m */; };
+		99E1FF0F218AEC8B00087773 /* PhotoCompressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E1FF0E218AEC8B00087773 /* PhotoCompressViewController.m */; };
 		99F75D7620B950B60007C49C /* MyLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9913F4E020B2C60A00F9A8B0 /* MyLayout.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		9992481520B3BF05002F1827 /* FrameTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameTestViewController.h; sourceTree = "<group>"; };
 		9992481620B3BF05002F1827 /* FrameTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrameTestViewController.m; sourceTree = "<group>"; };
 		9992481B20B3C1E6002F1827 /* SystemConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemConstants.h; sourceTree = "<group>"; };
+		99E1FF0D218AEC8B00087773 /* PhotoCompressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCompressViewController.h; sourceTree = "<group>"; };
+		99E1FF0E218AEC8B00087773 /* PhotoCompressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCompressViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,10 @@
 			children = (
 				991AB72920AA84E3003C8A52 /* HomeViewController.h */,
 				991AB72A20AA84E3003C8A52 /* HomeViewController.m */,
+				991AB73B20AA8DB8003C8A52 /* MapDemoViewController.h */,
+				991AB73C20AA8DB8003C8A52 /* MapDemoViewController.m */,
+				99E1FF0D218AEC8B00087773 /* PhotoCompressViewController.h */,
+				99E1FF0E218AEC8B00087773 /* PhotoCompressViewController.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -193,8 +200,6 @@
 				99135F4F20B3F5AC004AD17F /* MyLayoutDemo */,
 				991AB72320AA84A9003C8A52 /* MineViewController.h */,
 				991AB72420AA84A9003C8A52 /* MineViewController.m */,
-				991AB73B20AA8DB8003C8A52 /* MapDemoViewController.h */,
-				991AB73C20AA8DB8003C8A52 /* MapDemoViewController.m */,
 			);
 			path = mine;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E1FF0F218AEC8B00087773 /* PhotoCompressViewController.m in Sources */,
 				9992481720B3BF05002F1827 /* FrameTestViewController.m in Sources */,
 				99135F5220B3F5CB004AD17F /* LinearLayoutViewController.m in Sources */,
 				99825D00211430100089B85B /* FileViewController.m in Sources */,
