@@ -10,6 +10,7 @@
 #import "FileViewController.h"
 #import "FileMgrViewController.h"
 #import "FileShareViewController.h"
+#import "AddressSanitizerViewController.h"
 
 @interface WorkViewController ()
 
@@ -49,6 +50,13 @@
     [fileMgrBtn2 setTitleColor:[UIColor redColor] forState:(UIControlStateNormal)];
     [fileMgrBtn2 addTarget:self action:@selector(toFileSharePage) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:fileMgrBtn2];
+    
+    UIButton *addressSanitizerBtn = [UIButton new];
+    addressSanitizerBtn.frame = CGRectMake(50, 300, 300, 30);
+    [addressSanitizerBtn setTitle:@"Address Sanitizer" forState:(UIControlStateNormal)];
+    [addressSanitizerBtn setTitleColor:[UIColor redColor] forState:(UIControlStateNormal)];
+    [addressSanitizerBtn addTarget:self action:@selector(toAddressSanitizerPage) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:addressSanitizerBtn];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -92,6 +100,11 @@
 
 -(void)toFileSharePage{
     [self.navigationController pushViewController:[FileShareViewController new] animated:YES];
+    self.tabBarController.tabBar.hidden = YES;
+}
+
+-(void)toAddressSanitizerPage{
+    [self.navigationController pushViewController:[AddressSanitizerViewController new] animated:YES];
     self.tabBarController.tabBar.hidden = YES;
 }
 

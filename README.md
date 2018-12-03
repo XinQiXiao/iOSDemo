@@ -57,3 +57,9 @@
 
 			# v0.6.0 照片压缩
 				拍照、相册、视频压缩
+			
+			# v0.7.0 内存泄露 
+				a. Address Sanitizer 应用
+
+				b. MLeaksFinder 使用
+					https://github.com/Tencent/MLeaksFinder
