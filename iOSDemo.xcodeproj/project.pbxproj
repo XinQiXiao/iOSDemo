@@ -27,6 +27,7 @@
 		993DE0912118022A00CF6890 /* FileShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993DE0902118022A00CF6890 /* FileShareViewController.m */; };
 		993DE093211806D800CF6890 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 993DE092211806D800CF6890 /* test.pdf */; };
 		994664432114918A00F228E0 /* tupian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 994664422114918A00F228E0 /* tupian.jpg */; };
+		996370E321CE66720075CFB4 /* WkWebDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996370E221CE66720075CFB4 /* WkWebDemoViewController.m */; };
 		99808D8E21B507740078FB99 /* AddressSanitizerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99808D8D21B507740078FB99 /* AddressSanitizerViewController.m */; };
 		99808DA721B51D8E0078FB99 /* UINavigationController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 99808D9021B51D880078FB99 /* UINavigationController+MemoryLeak.m */; };
 		99808DA821B51D8E0078FB99 /* UITouch+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 99808D9621B51D8A0078FB99 /* UITouch+MemoryLeak.m */; };
@@ -78,6 +79,8 @@
 		993DE0902118022A00CF6890 /* FileShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileShareViewController.m; sourceTree = "<group>"; };
 		993DE092211806D800CF6890 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
 		994664422114918A00F228E0 /* tupian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tupian.jpg; sourceTree = "<group>"; };
+		996370E121CE66720075CFB4 /* WkWebDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WkWebDemoViewController.h; sourceTree = "<group>"; };
+		996370E221CE66720075CFB4 /* WkWebDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WkWebDemoViewController.m; sourceTree = "<group>"; };
 		99808D8C21B507740078FB99 /* AddressSanitizerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressSanitizerViewController.h; sourceTree = "<group>"; };
 		99808D8D21B507740078FB99 /* AddressSanitizerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressSanitizerViewController.m; sourceTree = "<group>"; };
 		99808D9021B51D880078FB99 /* UINavigationController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MemoryLeak.m"; sourceTree = "<group>"; };
@@ -212,6 +215,8 @@
 				991AB73C20AA8DB8003C8A52 /* MapDemoViewController.m */,
 				99E1FF0D218AEC8B00087773 /* PhotoCompressViewController.h */,
 				99E1FF0E218AEC8B00087773 /* PhotoCompressViewController.m */,
+				996370E121CE66720075CFB4 /* WkWebDemoViewController.h */,
+				996370E221CE66720075CFB4 /* WkWebDemoViewController.m */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -447,6 +452,7 @@
 				99808DAF21B51D8E0078FB99 /* UITabBarController+MemoryLeak.m in Sources */,
 				99808DA721B51D8E0078FB99 /* UINavigationController+MemoryLeak.m in Sources */,
 				99808DB021B51D8E0078FB99 /* UIViewController+MemoryLeak.m in Sources */,
+				996370E321CE66720075CFB4 /* WkWebDemoViewController.m in Sources */,
 				99808DA921B51D8E0078FB99 /* UIApplication+MemoryLeak.m in Sources */,
 				99808DAC21B51D8E0078FB99 /* NSObject+MemoryLeak.m in Sources */,
 				99808D8E21B507740078FB99 /* AddressSanitizerViewController.m in Sources */,

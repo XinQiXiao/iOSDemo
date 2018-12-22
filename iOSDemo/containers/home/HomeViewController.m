@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "MapDemoViewController.h"
+#import "WkWebDemoViewController.h"
 
 @interface HomeViewController ()
 
@@ -26,6 +27,13 @@
     [btn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
     [btn addTarget:self action:@selector(toMKMap) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:btn];
+    
+    UIButton *webbtn = [[UIButton alloc]initWithFrame:CGRectMake(100, 250, 200, 30)];
+    //    btn.backgroundColor = [UIColor blueColor];
+    [webbtn setTitle:@"WKWebDemo" forState:(UIControlStateNormal)];
+    [webbtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+    [webbtn addTarget:self action:@selector(toWKWeb) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:webbtn];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,6 +50,12 @@
 -(void)toMKMap{
     
     [self.navigationController pushViewController:[MapDemoViewController new] animated:YES];
+    self.tabBarController.tabBar.hidden = YES;
+}
+
+-(void)toWKWeb{
+    
+    [self.navigationController pushViewController:[WkWebDemoViewController new] animated:YES];
     self.tabBarController.tabBar.hidden = YES;
 }
 
