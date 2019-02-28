@@ -66,3 +66,6 @@
 
 				c. FBRetainCycleDetector 使用
 					https://github.com/facebook/FBRetainCycleDetector
+
+			# v0.8.0 
+				更新了 launchImage (适配 XR XsMax)
